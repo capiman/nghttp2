@@ -5859,7 +5859,7 @@ static const uint8_t static_in[] = {0};
 
 ssize_t nghttp2_session_mem_recv(nghttp2_session *session, const uint8_t *in,
                                  size_t inlen) {
-  printf("nghttp2_session_mem_recv\n");
+  //MM printf("nghttp2_session_mem_recv\n");
   return (ssize_t)nghttp2_session_mem_recv2(session, in, inlen);
 }
 
@@ -5876,7 +5876,7 @@ nghttp2_ssize nghttp2_session_mem_recv2(nghttp2_session *session,
   size_t pri_fieldlen;
   nghttp2_mem *mem;
 
-  printf("nghttp2_session_mem_recv2\n");
+  //MM printf("nghttp2_session_mem_recv2\n");
 
   if (in == NULL) {
     assert(inlen == 0);
